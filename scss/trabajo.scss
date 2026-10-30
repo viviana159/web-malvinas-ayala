@@ -1,0 +1,51 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
+.actividades {
+    padding: $espacio-seccion 0;
+}
+
+.actividad-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.25rem;
+    background-color: $blanco;
+    border-radius: $radio-borde;
+    padding: 1.75rem;
+    height: 100%;
+    @include sombra-tarjeta;
+
+    .actividad-icono {
+        @include flex-centrado;
+        flex-shrink: 0;
+        width: 56px;
+        height: 56px;
+        border-radius: 50%;
+        background-color: rgba($celeste, 0.15);
+        color: $celeste-oscuro;
+        font-size: 1.5rem;
+    }
+
+    .actividad-titulo {
+        font-family: $fuente-titulos;
+        color: $azul-noche;
+        margin-bottom: 0.4rem;
+    }
+
+    .actividad-texto {
+        color: $gris-medio;
+        margin-bottom: 0;
+    }
+}
+
+// FONDO COLABORAR
+.cta-colaborar {
+    background-color: $celeste-oscuro;
+    color: $blanco;
+    text-align: center;
+    padding: $espacio-seccion 0;
+
+    h2 {
+        font-family: $fuente-titulos;
+    }
+}

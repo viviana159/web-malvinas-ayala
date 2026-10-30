@@ -1,0 +1,67 @@
+// ESTILOS GENERALES
+
+@use "sass:color";
+@use "variables" as *;
+
+body {
+    font-family: $fuente-texto;
+    color: $azul-noche;
+}
+
+h1, h2, h3, h4 {
+    font-family: $fuente-titulos;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.titulo-seccion {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding-bottom: 0.75rem;
+    color: $celeste-oscuro;
+
+    // LINEA DECORATIVA
+
+    &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60px;
+        height: 4px;
+        background-color: $dorado;
+    }
+}
+
+.seccion-clara {
+    background-color: $gris-claro;
+}
+
+.seccion-oscura {
+    background-color: $azul-noche;
+    color: $blanco;
+}
+
+// BOTONES
+
+.btn-institucional {
+    background-color: $celeste-oscuro;
+    border-color: $celeste-oscuro;
+    color: $blanco;
+    font-family: $fuente-titulos;
+    letter-spacing: 0.03em;
+    padding: 0.6rem 1.75rem;
+
+    &:hover,
+    &:focus {
+        $celeste-oscuro-hover: color.adjust($celeste-oscuro, $lightness: -8%);
+        background-color: $celeste-oscuro-hover;
+        border-color: $celeste-oscuro-hover;
+        color: $blanco;
+    }
+}
+
+.seccion {
+    padding-top: $espacio-seccion;
+    padding-bottom: $espacio-seccion;
+}

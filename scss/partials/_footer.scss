@@ -1,0 +1,56 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.footer-institucional {
+    background-color: $azul-noche;
+    color: $blanco;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+
+    h5 {
+        font-family: $fuente-titulos;
+        color: $celeste;
+        margin-bottom: 1rem;
+    }
+    a {
+        color: $blanco;
+        text-decoration: none;
+
+        &:hover {
+            color: $dorado;
+            text-decoration: underline;
+        }
+    }
+
+    // REDES SOCIALES
+    .redes-sociales {
+        display: flex;
+        gap: 0.75rem;
+
+        a {
+            // mixins
+            @include flex-centrado;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba($blanco, 0.1);
+            font-size: 1.1rem;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+                background-color: $dorado;
+                color: $azul-noche;
+            }
+        }
+    }
+
+    .footer-linea {
+        border-color: rgba($blanco, 0.15);
+        margin: 2rem 0 1rem;
+    }
+
+    .footer-copy {
+        color: rgba($blanco, 0.6);
+        font-size: 0.875rem;
+    }
+}

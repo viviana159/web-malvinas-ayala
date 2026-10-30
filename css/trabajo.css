@@ -1,0 +1,52 @@
+.actividades {
+  padding: 4rem 0;
+}
+
+.actividad-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 1.75rem;
+  height: 100%;
+  box-shadow: 0 4px 12px rgba(27, 42, 58, 0.1);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.actividad-item:hover {
+  box-shadow: 0 8px 20px rgba(27, 42, 58, 0.16);
+  transform: translateY(-4px);
+}
+.actividad-item .actividad-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: rgba(108, 172, 228, 0.15);
+  color: #2e5c8a;
+  font-size: 1.5rem;
+}
+.actividad-item .actividad-titulo {
+  font-family: "Montserrat", sans-serif;
+  color: #1b2a3a;
+  margin-bottom: 0.4rem;
+}
+.actividad-item .actividad-texto {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.cta-colaborar {
+  background-color: #2e5c8a;
+  color: #ffffff;
+  text-align: center;
+  padding: 4rem 0;
+}
+.cta-colaborar h2 {
+  font-family: "Montserrat", sans-serif;
+}
+
+/*# sourceMappingURL=trabajo.css.map */

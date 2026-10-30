@@ -1,0 +1,36 @@
+@use "variables" as *;
+
+.navbar-institucional {
+    background-color: $blanco;
+    border-bottom: 3px solid $celeste;
+    box-shadow: 0 2px 8px rgba($azul-noche, 0.08);
+
+    .navbar-brand {
+        font-family: $fuente-titulos;
+        font-weight: 700;
+        color: $celeste-oscuro;
+        letter-spacing: 0.03rem;
+
+        img {
+            height: 42px;
+            margin-right: 0.5rem;
+        }
+    }
+
+    .nav-link {
+        font-family: $fuente-titulos;
+        color: $azul-noche;
+        margin-left: 0.5rem;
+
+        &:hover {
+            color: $celeste-oscuro;
+        }
+
+        // MOSTRAR EN MENU PAGINA ACTIVA
+        &-active {
+            color: $celeste-oscuro;
+            font-weight: 700;
+            border-bottom: 2px solid $dorado;
+        }
+    }
+}

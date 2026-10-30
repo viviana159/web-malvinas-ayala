@@ -1,0 +1,63 @@
+.hero-inicio {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  padding: 2rem 1rem;
+  background: linear-gradient(135deg, #2e5c8a 0%, #6cace4 100%);
+}
+.hero-inicio .hero-titulo {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  text-shadow: 0 2px 6px rgba(27, 42, 58, 0.35);
+}
+@media (max-width: 767.98px) {
+  .hero-inicio .hero-titulo {
+    font-size: 2rem;
+  }
+}
+.hero-inicio .hero-subtitulo {
+  font-size: 1.25rem;
+  max-width: 640px;
+  margin: 1rem auto 2rem;
+}
+
+.quienes-somos {
+  padding: 4rem 0;
+}
+.quienes-somos p {
+  font-size: 1.05rem;
+  color: #6c757d;
+}
+
+.tarjetas-destacadas {
+  padding-bottom: 4rem;
+}
+.tarjetas-destacadas .card {
+  border: none;
+  border-top: 4px solid #6cace4;
+  border-radius: 0.5rem;
+  height: 100%;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(27, 42, 58, 0.1);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.tarjetas-destacadas .card:hover {
+  box-shadow: 0 8px 20px rgba(27, 42, 58, 0.16);
+  transform: translateY(-4px);
+}
+.tarjetas-destacadas .card .card-icono {
+  font-size: 2.25rem;
+  color: #2e5c8a;
+  margin-bottom: 0.75rem;
+}
+.tarjetas-destacadas .card .card-title {
+  font-family: "Montserrat", sans-serif;
+  color: #1b2a3a;
+}
+
+/*# sourceMappingURL=inicio.css.map */

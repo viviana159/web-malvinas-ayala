@@ -1,0 +1,69 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
+.encabezado-pagina {
+    background-color: $azul-noche;
+    color: $blanco;
+    padding: 3.5rem 0;
+    text-align: center;
+
+    h1 {
+        font-family: $fuente-titulos;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: rgba($blanco, 0.75);
+        max-width: 560px;
+        margin: 0 auto;
+    }
+}
+
+//LINEA DE TIEMPO
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+    border-left: 3px solid $celeste;
+
+    @include mobile {
+        padding-left: 1.25rem;
+    }
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 2.5rem;
+
+    &:last-child {
+        padding-bottom: 0;
+
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: -2.4rem;
+        top: 0.35rem;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background-color: $dorado;
+        border: 3px solid $blanco;
+        box-shadow: 0 0 0 2px $celeste;
+
+        @include mobile {
+            left: -1.65rem;
+        }
+    }
+
+    .timeline-anio {
+        font-family: $fuente-titulos;
+        color: $celeste-oscuro;
+        font-weight: 700;
+    }
+
+    .timeline-texto {
+        color: $gris-medio;
+    }
+}

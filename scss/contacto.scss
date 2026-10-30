@@ -1,0 +1,83 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
+.encabezado-pagina-contacto {
+    background-color: $azul-noche;
+    color: $blanco;
+    padding: 3.5rem 0;
+    text-align: left;
+
+    h1 {
+        font-family: $fuente-titulos;
+        margin-bottom: 0.5rem;
+    }
+
+    p {
+        color: rgba($blanco, 0.75);
+        max-width: 560px;
+        text-align: left;
+    }
+}
+
+.seccion-contacto {
+    padding: $espacio-seccion 0;
+}
+
+// DATOS CONTACTO
+.datos-contacto {
+    .dato-item {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+
+        .dato-icono {
+            @include flex-centrado;
+            flex-shrink: 0;
+            width: 44px;
+            height: 44px;
+            border-radius: 50%;
+            background-color: rgba($celeste, 0.15);
+            color: $celeste-oscuro;
+            font-size: 1.15rem;
+        }
+
+        h6 {
+            font-family: $fuente-titulos;
+            margin-bottom: 0.15rem;
+            color: $azul-noche;
+        }
+
+        p {
+            color: $gris-medio;
+            margin-bottom: 0;
+        }
+    }
+}
+
+// FORMULARIO
+.formulario-contacto {
+    background-color: $blanco;
+    border-radius: $radio-borde;
+    padding: 2rem;
+    @include sombra-tarjeta;
+
+    .form-label {
+        font-family: $fuente-titulos;
+        color: $azul-noche;
+    }
+
+    .form-control:focus {
+        border-color: $celeste;
+        box-shadow: 0 0 0 0.2rem rgba($celeste, 0.25);
+    }
+}
+
+// MAPA
+.mapa-placeholder {
+    width: 100%;
+    min-height: 320px;
+    border-radius: $radio-borde;
+    overflow: hidden;
+    border: 1px solid rgba($azul-noche, 0.1);
+}

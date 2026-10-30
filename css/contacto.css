@@ -1,0 +1,77 @@
+.encabezado-pagina-contacto {
+  background-color: #1b2a3a;
+  color: #ffffff;
+  padding: 3.5rem 0;
+  text-align: left;
+}
+.encabezado-pagina-contacto h1 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.5rem;
+}
+.encabezado-pagina-contacto p {
+  color: rgba(255, 255, 255, 0.75);
+  max-width: 560px;
+  text-align: left;
+}
+
+.seccion-contacto {
+  padding: 4rem 0;
+}
+
+.datos-contacto .dato-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.datos-contacto .dato-item .dato-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(108, 172, 228, 0.15);
+  color: #2e5c8a;
+  font-size: 1.15rem;
+}
+.datos-contacto .dato-item h6 {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 0.15rem;
+  color: #1b2a3a;
+}
+.datos-contacto .dato-item p {
+  color: #6c757d;
+  margin-bottom: 0;
+}
+
+.formulario-contacto {
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 2rem;
+  box-shadow: 0 4px 12px rgba(27, 42, 58, 0.1);
+  transition: box-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+.formulario-contacto:hover {
+  box-shadow: 0 8px 20px rgba(27, 42, 58, 0.16);
+  transform: translateY(-4px);
+}
+.formulario-contacto .form-label {
+  font-family: "Montserrat", sans-serif;
+  color: #1b2a3a;
+}
+.formulario-contacto .form-control:focus {
+  border-color: #6cace4;
+  box-shadow: 0 0 0 0.2rem rgba(108, 172, 228, 0.25);
+}
+
+.mapa-placeholder {
+  width: 100%;
+  min-height: 320px;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  border: 1px solid rgba(27, 42, 58, 0.1);
+}
+
+/*# sourceMappingURL=contacto.css.map */
